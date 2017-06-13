@@ -34,7 +34,7 @@ RUN set -x \
  && chmod +x /usr/local/bin/gosu \
  && gosu nobody true \
  && apt-get update -qq \
- && apt-get install -qqy openjdk-8-jdk net-tools tzdata telnet ping\
+ && apt-get install -qqy openjdk-8-jdk net-tools tzdata \
  && apt-get clean \
  && set +x
 
